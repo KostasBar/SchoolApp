@@ -10,7 +10,6 @@ import gr.aueb.cf.teacherapp.service.RegionService;
 import gr.aueb.cf.teacherapp.service.TeacherService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.aspectj.apache.bcel.generic.LOOKUPSWITCH;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -58,7 +57,7 @@ public class TeacherController {
             return "teacher-form";
         }
 
-        TeacherReadOnlyDTO readOnlyDTO = mapper.mapToTeacherReadOnlyDTO(savedTeacher);
+//        TeacherReadOnlyDTO readOnlyDTO = mapper.mapToTeacherReadOnlyDTO(savedTeacher);
         model.addAttribute("savedTeacher", savedTeacher);
         return "success";
 
