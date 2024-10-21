@@ -1,0 +1,22 @@
+table {
+    width: 90vw;
+    margin-top: 40px;
+    border: 1px solid black;
+}
+
+table thead th {
+    background: var(--dark-blue);
+    color: #fff;
+    border: 1px solid black;
+}
+
+h1 {
+    text-align: center;
+}
+
+.pagination-controls {
+    width: 90%;
+    margin-top: 15px;
+    list-style-type: none;
+    text-align: center;
+}
