@@ -9,6 +9,6 @@ import org.springframework.data.domain.Page;
 
 public interface ITeacherService {
     Teacher saveTeacher(TeacherInsertDTO dto) throws EntityAlreadyExistsException, EntityInvalidArgumentException;
-    public Page<TeacherReadOnlyDTO> getPaginatedTeachers(int page, int size);
+    Page<TeacherReadOnlyDTO> getPaginatedTeachers(int page, int size);
 
 }
