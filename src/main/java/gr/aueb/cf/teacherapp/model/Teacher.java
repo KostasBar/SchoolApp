@@ -32,6 +32,7 @@ public class Teacher extends AbstractEntity{
     @JoinColumn(name = "region_id")
     private Region region;
 
+    @PrePersist
     public void initializeUUID(){
         if (uuid == null){
             uuid = UUID.randomUUID().toString();
